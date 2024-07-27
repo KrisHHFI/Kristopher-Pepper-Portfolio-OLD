@@ -18,6 +18,8 @@ import colour7 from '../Assets/Images/Colour7.jpg';
 import colour8 from '../Assets/Images/Colour8.jpg';
 import colour9 from '../Assets/Images/Colour9.jpg';
 import colour10 from '../Assets/Images/Colour10.jpg';
+import leftArrow from '../Assets/Images/LeftArrow.png';
+import rightArrow from '../Assets/Images/RightArrow.png';
 
 export const BWPortraitImageSources = {
     bw1,
@@ -43,4 +45,9 @@ export const ColourPortraitSources = {
     colour8,
     colour9,
     colour10,
+};
+
+export const ComponentImageSources = {
+    leftArrow,
+    rightArrow,
 };

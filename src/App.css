@@ -1,7 +1,48 @@
 .App {
-  display: flex;
-  justify-content: center;
   align-items: center;
+  display: flex;
   height: 100vh;
+  justify-content: center;
   text-align: center;
+}
+
+.arrowImage {
+  background-color: grey;
+  cursor: pointer;
+  max-height: 7.5%;
+  opacity: 0;
+  padding: 10px;
+  position: absolute;
+  transition: opacity 0.3s ease;
+}
+
+.carouselContainer {
+  align-items: center;
+  display: flex;
+  height: 90vh;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  width: fit-content;
+}
+
+.carouselContainer:hover .arrowImage {
+  opacity: 0.3;
+}
+
+.carouselContainer .arrowImage:hover {
+  opacity: 1;
+}
+
+.image {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.leftArrowImage {
+  left: 0;
+}
+
+.rightArrowImage {
+  right: 0;
 }
