@@ -1,36 +1,43 @@
 import React, { useState } from 'react';
-import { BWPortraitImageSources, ComponentImageSources } from '../../BackEnd/ImageSources';
-import '../../App.css'; 
+import PropTypes from 'prop-types';
+import '../../App.css';
 
-const ImageCarousel = () => {
+const ImageCarousel = ({ imageSources, leftArrow, rightArrow }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const bwImages = Object.values(BWPortraitImageSources);
+  const images = Object.values(imageSources);
 
   const handleNext = () => {
-    setCurrentImageIndex((prevIndex) => (prevIndex + 1) % bwImages.length);
+    setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
   };
 
   const handlePrev = () => {
-    setCurrentImageIndex((prevIndex) => (prevIndex - 1 + bwImages.length) % bwImages.length);
+    setCurrentImageIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
   };
 
   return (
     <div className="carouselContainer">
       <img
-        src={ComponentImageSources.leftArrow}
+        src={leftArrow}
         alt="Left Arrow"
         className="arrowImage leftArrowImage"
         onClick={handlePrev}
       />
-      <img src={bwImages[currentImageIndex]} alt="carousel" className="image" />
+      <img src={images[currentImageIndex]} alt="carousel" className="image" />
       <img
-        src={ComponentImageSources.rightArrow}
+        src={rightArrow}
         alt="Right Arrow"
         className="arrowImage rightArrowImage"
         onClick={handleNext}
       />
     </div>
   );
+};
+
+// Define prop types for type checking
+ImageCarousel.propTypes = {
+  imageSources: PropTypes.object.isRequired,
+  leftArrow: PropTypes.string.isRequired,
+  rightArrow: PropTypes.string.isRequired
 };
 
 export default ImageCarousel;
