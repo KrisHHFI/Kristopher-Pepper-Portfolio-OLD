@@ -13,7 +13,7 @@ const ImageCarousel = () => {
 const styles = {
   carouselContainer: {
     width: '100%',
-    height: '400px',
+    height: '90vh ',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
