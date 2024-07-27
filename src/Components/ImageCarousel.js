@@ -1,11 +1,11 @@
 import React from 'react';
-import { BWHeadShotImageSources } from '../BackEnd/ImageSources';
+import { BWPortraitImageSources } from '../BackEnd/ImageSources';
 
 const ImageCarousel = () => {
 
   return (
     <div style={styles.carouselContainer}>
-      <img src={BWHeadShotImageSources.bw1} alt="carousel" style={styles.image} />
+      <img src={BWPortraitImageSources.bw1} alt="carousel" style={styles.image} />
     </div>
   );
 };
