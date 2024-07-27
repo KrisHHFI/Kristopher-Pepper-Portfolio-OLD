@@ -1,10 +1,10 @@
 .App {
   align-items: center;
   display: flex;
+  flex-direction: column;
   height: 100vh;
   justify-content: space-evenly;
   text-align: center;
-  flex-direction: column;
 }
 
 .arrowImage {
@@ -27,12 +27,25 @@
   width: fit-content;
 }
 
+.carouselContainer .arrowImage:hover {
+  opacity: 1 !important;
+}
+
 .carouselContainer:hover .arrowImage {
   opacity: 0.3;
 }
 
-.carouselContainer .arrowImage:hover {
-  opacity: 1;
+.carouselImage {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.carouselLeftArrowImage {
+  left: 0;
+}
+
+.carouselRightArrowImage {
+  right: 0;
 }
 
 .carouselTitle {
@@ -40,20 +53,15 @@
   font-weight: bold;
 }
 
-.image {
-  max-height: 100%;
-  max-width: 100%;
-}
-
-.leftArrowImage {
-  left: 0;
-}
-
 .navBarContainer {
+  background-color: lightgray;
   display: flex;
   flex-direction: column;
-  position: absolute;
+  height: 100vh;
   left: 0;
+  justify-content: flex-start;
+  position: absolute;
+  text-align: left;
   top: 0;
 }
 
@@ -63,6 +71,20 @@
   flex-direction: column;
 }
 
-.rightArrowImage {
-  right: 0;
+.navBarH1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
 }
+
+.navBarH2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.navBarSection {
+  margin-top: 5vh;
+}
+

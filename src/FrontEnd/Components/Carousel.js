@@ -20,14 +20,14 @@ const Carousel = ({ carouselTitleText, imageSources, leftArrow, rightArrow }) =>
         <img
           src={leftArrow}
           alt="Left Arrow"
-          className="arrowImage leftArrowImage"
+          className="arrowImage carouselLeftArrowImage"
           onClick={handlePrev}
         />
-        <img src={images[currentImageIndex]} alt="carousel" className="image" />
+        <img src={images[currentImageIndex]} alt="carousel" className="carouselImage" />
         <img
           src={rightArrow}
           alt="Right Arrow"
-          className="arrowImage rightArrowImage"
+          className="arrowImage carouselRightArrowImage"
           onClick={handleNext}
         />
       </div>
