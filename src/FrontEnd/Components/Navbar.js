@@ -2,16 +2,18 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import '../../App.css';
 
-const Navbar = ({ link1, link2, onLinkClick }) => {
+const Navbar = ({ pages, onLinkClick }) => {
   return (
     <div className="navBarContainer">
       <div className="navBarH1">Kristopher Pepper</div>
       <div className="navBarSection">
         <div className="navBarH2">Photography</div>
         <div className="navBarLinks">
-          <div onClick={() => onLinkClick(link1)}>{link1}</div>
-          <div onClick={() => onLinkClick(link2)}>{link2}</div>
-          <div>Bands</div>
+          {Object.keys(pages).map((page) => (
+            <div key={page} onClick={() => onLinkClick(page)}>
+              {pages[page].title}
+            </div>
+          ))}
         </div>
       </div>
       <div className="navBarSection">
@@ -30,9 +32,8 @@ const Navbar = ({ link1, link2, onLinkClick }) => {
 };
 
 Navbar.propTypes = {
-  link1: PropTypes.string.isRequired,
-  link2: PropTypes.string.isRequired,
-  onLinkClick: PropTypes.func.isRequired, // Add prop type for the onLinkClick function
+  pages: PropTypes.object.isRequired,
+  onLinkClick: PropTypes.func.isRequired,
 };
 
 export default Navbar;

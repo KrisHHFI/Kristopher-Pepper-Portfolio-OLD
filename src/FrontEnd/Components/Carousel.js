@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import '../../App.css';
 
-const Carousel = ({ carouselTitleText, imageSources, leftArrow, rightArrow }) => {
+const Carousel = ({ pageTitle, imageSources, leftArrow, rightArrow }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const images = Object.values(imageSources);
 
@@ -32,14 +32,14 @@ const Carousel = ({ carouselTitleText, imageSources, leftArrow, rightArrow }) =>
         />
       </div>
       <div className="carouselTitle">
-        {carouselTitleText}
+        {pageTitle}
       </div>
     </div>
   );
 };
 
 Carousel.propTypes = {
-  carouselTitleText: PropTypes.string.isRequired,
+  pageTitle: PropTypes.string.isRequired,
   imageSources: PropTypes.object.isRequired,
   leftArrow: PropTypes.string.isRequired,
   rightArrow: PropTypes.string.isRequired

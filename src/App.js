@@ -16,6 +16,10 @@ function App() {
       title: 'Colour Portraits',
       imageSources: ColourPortraitSources,
     },
+    'Bands': {
+      title: 'Bands',
+      imageSources: ColourPortraitSources,
+    },
   };
 
   const { title, imageSources } = pages[activePage];
@@ -23,12 +27,11 @@ function App() {
   return (
     <div className="App">
       <Navbar
-        link1="BW Portraits"
-        link2="Colour Portraits"
+        pages={pages}
         onLinkClick={setActivePage}
       />
       <Carousel
-        carouselTitleText={title}
+        pageTitle={title}
         imageSources={imageSources}
         leftArrow={ComponentImageSources.leftArrow}
         rightArrow={ComponentImageSources.rightArrow}

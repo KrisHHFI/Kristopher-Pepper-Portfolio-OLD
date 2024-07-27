@@ -60,9 +60,11 @@
   height: 100vh;
   left: 0;
   justify-content: flex-start;
+  padding: 10px;
   position: absolute;
   text-align: left;
   top: 0;
+  width: auto;
 }
 
 .navBarLinks {
