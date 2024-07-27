@@ -1,18 +1,17 @@
 import React from 'react';
 import './App.css';
-import ImageCarousel from './FrontEnd/Components/ImageCarousel';
-import CarouselTitle from './FrontEnd/Components/CarouselTitle';
+import Carousel from './FrontEnd/Components/Carousel';
 import { BWPortraitImageSources, ComponentImageSources } from './BackEnd/ImageSources';
 
 function App() {
   return (
     <div className="App">
-      <ImageCarousel
+      <Carousel
+        carouselTitleText="BW Portraits"
         imageSources={BWPortraitImageSources}
         leftArrow={ComponentImageSources.leftArrow}
         rightArrow={ComponentImageSources.rightArrow}
       />
-      <CarouselTitle carouselTitleText="BW Portraits" />
     </div>
   );
 }
