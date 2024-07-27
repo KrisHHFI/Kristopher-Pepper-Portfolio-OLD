@@ -33,7 +33,6 @@ const ImageCarousel = ({ imageSources, leftArrow, rightArrow }) => {
   );
 };
 
-// Define prop types for type checking
 ImageCarousel.propTypes = {
   imageSources: PropTypes.object.isRequired,
   leftArrow: PropTypes.string.isRequired,

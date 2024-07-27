@@ -2,8 +2,9 @@
   align-items: center;
   display: flex;
   height: 100vh;
-  justify-content: center;
+  justify-content: space-evenly;
   text-align: center;
+  flex-direction: column;
 }
 
 .arrowImage {
@@ -32,6 +33,11 @@
 
 .carouselContainer .arrowImage:hover {
   opacity: 1;
+}
+
+.carouselTitle {
+  font-size: 24px;
+  font-weight: bold;
 }
 
 .image {
