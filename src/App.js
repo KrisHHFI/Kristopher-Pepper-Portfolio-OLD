@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 import Carousel from './FrontEnd/Components/Carousel';
 import Navbar from './FrontEnd/Components/Navbar';
-import { BWPortraitImageSources, ComponentImageSources, ColourPortraitSources } from './BackEnd/ImageSources';
+import { BandImageSources, BWPortraitImageSources, ComponentImageSources, ColourPortraitSources } from './BackEnd/ImageSources';
 
 function App() {
   const [activePage, setActivePage] = useState('BW Portraits');
@@ -18,7 +18,7 @@ function App() {
     },
     'Bands': {
       title: 'Bands',
-      imageSources: ColourPortraitSources,
+      imageSources: BandImageSources,
     },
   };
 

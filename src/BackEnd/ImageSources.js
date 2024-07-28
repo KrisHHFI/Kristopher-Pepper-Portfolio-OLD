@@ -1,13 +1,23 @@
-import bw1 from '../Assets/Images/BW1.jpg'
-import bw2 from '../Assets/Images/BW2.jpg'
-import bw3 from '../Assets/Images/BW3.jpg'
-import bw4 from '../Assets/Images/BW4.jpg'
-import bw5 from '../Assets/Images/BW5.jpg'
-import bw6 from '../Assets/Images/BW6.jpg'
-import bw7 from '../Assets/Images/BW7.jpg'
-import bw8 from '../Assets/Images/BW8.jpg'
-import bw9 from '../Assets/Images/BW9.jpg'
-import bw10 from '../Assets/Images/BW10.jpg'
+import band1 from '../Assets/Images/Band1.jpg';
+import band2 from '../Assets/Images/Band2.jpg';
+import band3 from '../Assets/Images/Band3.jpg';
+import band4 from '../Assets/Images/Band4.jpg';
+import band5 from '../Assets/Images/Band5.jpg';
+import band6 from '../Assets/Images/Band6.jpg';
+import band7 from '../Assets/Images/Band7.jpg';
+import band8 from '../Assets/Images/Band8.jpg';
+import band9 from '../Assets/Images/Band9.jpg';
+import band10 from '../Assets/Images/Band10.jpg';
+import bw1 from '../Assets/Images/BW1.jpg';
+import bw2 from '../Assets/Images/BW2.jpg';
+import bw3 from '../Assets/Images/BW3.jpg';
+import bw4 from '../Assets/Images/BW4.jpg';
+import bw5 from '../Assets/Images/BW5.jpg';
+import bw6 from '../Assets/Images/BW6.jpg';
+import bw7 from '../Assets/Images/BW7.jpg';
+import bw8 from '../Assets/Images/BW8.jpg';
+import bw9 from '../Assets/Images/BW9.jpg';
+import bw10 from '../Assets/Images/BW10.jpg';
 import colour1 from '../Assets/Images/Colour1.jpg';
 import colour2 from '../Assets/Images/Colour2.jpg';
 import colour3 from '../Assets/Images/Colour3.jpg';
@@ -45,6 +55,19 @@ export const ColourPortraitSources = {
     colour8,
     colour9,
     colour10,
+};
+
+export const BandImageSources = {
+    band1,
+    band2,
+    band3,
+    band4,
+    band5,
+    band6,
+    band7,
+    band8,
+    band9,
+    band10,
 };
 
 export const ComponentImageSources = {
