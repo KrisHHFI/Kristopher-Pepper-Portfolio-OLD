@@ -1,6 +1,7 @@
+// App.js
 import React, { useState } from 'react';
 import './App.css';
-import Carousel from './FrontEnd/Components/Carousel';
+import PageContent from './FrontEnd/Components/PageContent';
 import Navbar from './FrontEnd/Components/Navbar';
 import { BandImageSources, BWPortraitImageSources, ComponentImageSources, ColourPortraitSources } from './BackEnd/ImageSources';
 
@@ -26,16 +27,8 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar
-        pages={pages}
-        onLinkClick={setActivePage}
-      />
-      <Carousel
-        pageTitle={title}
-        imageSources={imageSources}
-        leftArrow={ComponentImageSources.leftArrow}
-        rightArrow={ComponentImageSources.rightArrow}
-      />
+      <Navbar pages={pages} onLinkClick={setActivePage} />
+      <PageContent pageTitle={title} imageSources={imageSources} />
     </div>
   );
 }
