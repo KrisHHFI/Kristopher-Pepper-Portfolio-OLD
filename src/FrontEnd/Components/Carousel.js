@@ -15,25 +15,20 @@ const Carousel = ({ pageTitle, imageSources, leftArrow, rightArrow }) => {
   };
 
   return (
-    <div>
-      <div className="carouselContainer">
-        <img
-          src={leftArrow}
-          alt="Left Arrow"
-          className="arrowImage carouselLeftArrowImage"
-          onClick={handlePrev}
-        />
-        <img src={images[currentImageIndex]} alt="carousel" className="carouselImage" />
-        <img
-          src={rightArrow}
-          alt="Right Arrow"
-          className="arrowImage carouselRightArrowImage"
-          onClick={handleNext}
-        />
-      </div>
-      <div className="pageTitle">
-        {pageTitle}
-      </div>
+    <div className="carouselContainer">
+      <img
+        src={leftArrow}
+        alt="Left Arrow"
+        className="arrowImage carouselLeftArrowImage"
+        onClick={handlePrev}
+      />
+      <img src={images[currentImageIndex]} alt="carousel" className="carouselImage" />
+      <img
+        src={rightArrow}
+        alt="Right Arrow"
+        className="arrowImage carouselRightArrowImage"
+        onClick={handleNext}
+      />
     </div>
   );
 };

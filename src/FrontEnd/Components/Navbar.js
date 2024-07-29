@@ -1,4 +1,3 @@
-// FrontEnd/Components/Navbar.js
 import React from 'react';
 import PropTypes from 'prop-types';
 import '../../App.css';
@@ -16,20 +15,25 @@ const Navbar = ({ pages, onLinkClick }) => {
   });
 
   return (
-    <div className="navBarContainer">
-      <div className="navBarH1">Kristopher Pepper</div>
-      {Object.keys(sections).map((section) => (
-        <div className="navBarSection" key={section}>
-          <div className="navBarH2">{section}</div>
-          <div className="navBarLinks">
-            {sections[section].map((page) => (
-              <div key={page.title} onClick={() => onLinkClick(page.title)}>
-                {page.title}
-              </div>
-            ))}
+    <div className="navbarWrapper">
+      <div className="navBarHamBurger">
+        <div className="navBarHamBurgerText">M<br/>e<br/>n<br/>u</div>
+      </div>
+      <div className="navbar">
+        <div className="navBarH1">Kristopher Pepper</div>
+        {Object.keys(sections).map((section) => (
+          <div className="navBarSection" key={section}>
+            <div className="navBarH2">{section}</div>
+            <div className="navBarLinks">
+              {sections[section].map((page) => (
+                <div key={page.title} onClick={() => onLinkClick(page.title)}>
+                  {page.title}
+                </div>
+              ))}
+            </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 };
