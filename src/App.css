@@ -48,8 +48,23 @@
   right: 0;
 }
 
+.splitLayoutContainer {
+  background-color: cyan;
+  display: flex;
+  flex-direction: row;
+  height: 90vh;
+  width: 100%;
+}
+
+.splitLayoutTile {
+  border: 1px solid black;
+  flex: 1;
+  height: 100%;
+}
+
 .pageContent {
   height: 90vh;
+  width: "100%";
 }
 
 .pageTitle {
@@ -93,4 +108,3 @@
 .navBarSection {
   margin-top: 5vh;
 }
-

@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import './App.css';
 import PageContent from './FrontEnd/Components/PageContent';
 import Navbar from './FrontEnd/Components/Navbar';
-import { BandImageSources, BWPortraitImageSources, ComponentImageSources, ColourPortraitSources } from './BackEnd/ImageSources';
+import { BandImageSources, BWPortraitImageSources, ColourPortraitSources } from './BackEnd/ImageSources';
 
 function App() {
   const [activePage, setActivePage] = useState('BW Portraits');
@@ -29,11 +29,18 @@ function App() {
     },
     'Tic Tac Farm': {
       title: 'Tic Tac Farm',
+      hasSplitLayout: true,
       imageSources: BandImageSources,
       section: 'Coding',
     },
     'React Weather App': {
       title: 'React Weather App',
+      hasSplitLayout: true,
+      imageSources: BandImageSources,
+      section: 'Coding',
+    },
+    'Other Projects': {
+      title: 'Other Projects',
       imageSources: BandImageSources,
       section: 'Coding',
     },
@@ -49,12 +56,17 @@ function App() {
     },
   };
 
-  const { title, hasCarousel = false, imageSources } = pages[activePage];
+  const { title, hasCarousel = false, hasSplitLayout = false, imageSources } = pages[activePage];
 
   return (
     <div className="App">
       <Navbar pages={pages} onLinkClick={setActivePage} />
-      <PageContent pageTitle={title} hasCarousel={hasCarousel} imageSources={imageSources} />
+      <PageContent
+        pageTitle={title}
+        hasCarousel={hasCarousel}
+        hasSplitLayout={hasSplitLayout}
+        imageSources={imageSources}
+      />
     </div>
   );
 }

@@ -1,10 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Carousel from './Carousel';
+import SplitLayout from './SplitLayout';
 import PageTitle from './PageTitle';
 import { ComponentImageSources } from '../../BackEnd/ImageSources';
 
-const PageContent = ({ pageTitle, hasCarousel, imageSources }) => {
+const PageContent = ({ pageTitle, hasCarousel, hasSplitLayout, imageSources }) => {
   return (
     <div className="pageContent">
       {hasCarousel && (
@@ -12,6 +13,11 @@ const PageContent = ({ pageTitle, hasCarousel, imageSources }) => {
           imageSources={imageSources}
           leftArrow={ComponentImageSources.leftArrow}
           rightArrow={ComponentImageSources.rightArrow}
+        />
+      )}
+        {hasSplitLayout && (
+        <SplitLayout
+          imageSources={imageSources}
         />
       )}
       <PageTitle
@@ -24,6 +30,7 @@ const PageContent = ({ pageTitle, hasCarousel, imageSources }) => {
 PageContent.propTypes = {
   pageTitle: PropTypes.string.isRequired,
   hasCarousel: PropTypes.bool,
+  hasSplitLayout: PropTypes.bool,
   imageSources: PropTypes.object.isRequired,
 };
 
