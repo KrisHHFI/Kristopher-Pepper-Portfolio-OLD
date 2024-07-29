@@ -31,7 +31,7 @@ const Carousel = ({ pageTitle, imageSources, leftArrow, rightArrow }) => {
           onClick={handleNext}
         />
       </div>
-      <div className="carouselTitle">
+      <div className="pageTitle">
         {pageTitle}
       </div>
     </div>

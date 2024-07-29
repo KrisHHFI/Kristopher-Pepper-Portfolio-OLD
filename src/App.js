@@ -11,16 +11,19 @@ function App() {
   const pages = {
     'BW Portraits': {
       title: 'BW Portraits',
+      hasCarousel: true,
       imageSources: BWPortraitImageSources,
       section: 'Photography',
     },
     'Colour Portraits': {
       title: 'Colour Portraits',
+      hasCarousel: true,
       imageSources: ColourPortraitSources,
       section: 'Photography',
     },
     'Bands': {
       title: 'Bands',
+      hasCarousel: true,
       imageSources: BandImageSources,
       section: 'Photography',
     },
@@ -46,12 +49,12 @@ function App() {
     },
   };
 
-  const { title, imageSources } = pages[activePage];
+  const { title, hasCarousel = false, imageSources } = pages[activePage];
 
   return (
     <div className="App">
       <Navbar pages={pages} onLinkClick={setActivePage} />
-      <PageContent pageTitle={title} imageSources={imageSources} />
+      <PageContent pageTitle={title} hasCarousel={hasCarousel} imageSources={imageSources} />
     </div>
   );
 }
