@@ -12,14 +12,37 @@ function App() {
     'BW Portraits': {
       title: 'BW Portraits',
       imageSources: BWPortraitImageSources,
+      section: 'Photography',
     },
     'Colour Portraits': {
       title: 'Colour Portraits',
       imageSources: ColourPortraitSources,
+      section: 'Photography',
     },
     'Bands': {
       title: 'Bands',
       imageSources: BandImageSources,
+      section: 'Photography',
+    },
+    'Tic Tac Farm': {
+      title: 'Tic Tac Farm',
+      imageSources: BandImageSources,
+      section: 'Coding',
+    },
+    'React Weather App': {
+      title: 'React Weather App',
+      imageSources: BandImageSources,
+      section: 'Coding',
+    },
+    'Me': {
+      title: 'Me',
+      imageSources: BandImageSources,
+      section: 'About',
+    },
+    'Contact': {
+      title: 'Contact',
+      imageSources: BandImageSources,
+      section: 'About',
     },
   };
 
