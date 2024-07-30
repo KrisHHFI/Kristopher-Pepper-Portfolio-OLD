@@ -1,4 +1,4 @@
-import { BandImageSources, BWPortraitImageSources, ColourPortraitSources } from '../BackEnd/ImageSources';
+import { BandImageSources, BWPortraitImageSources, ColourPortraitSources, TicTacFarmImageSources } from '../BackEnd/ImageSources';
 
 const pages = {
   'BW Portraits': {
@@ -22,7 +22,7 @@ const pages = {
   'Tic Tac Farm': {
     title: 'Tic Tac Farm',
     hasSplitLayout: true,
-    imageSources: BandImageSources,
+    imageSources: TicTacFarmImageSources,
     section: 'Coding',
   },
   'This Site': {

@@ -30,6 +30,11 @@ import colour9 from '../Assets/Images/Colour9.jpg';
 import colour10 from '../Assets/Images/Colour10.jpg';
 import leftArrow from '../Assets/Images/LeftArrow.png';
 import rightArrow from '../Assets/Images/RightArrow.png';
+import TicTacFarm1 from '../Assets/Images/TicTacFarm1.png';
+import TicTacFarm2 from '../Assets/Images/TicTacFarm2.png';
+import TicTacFarm3 from '../Assets/Images/TicTacFarm3.png';
+import TicTacFarm4 from '../Assets/Images/TicTacFarm4.png';
+import TicTacFarm5 from '../Assets/Images/TicTacFarm5.png';
 
 export const BWPortraitImageSources = {
     bw1,
@@ -73,4 +78,12 @@ export const BandImageSources = {
 export const ComponentImageSources = {
     leftArrow,
     rightArrow,
+};
+
+export const TicTacFarmImageSources = {
+    TicTacFarm1,
+    TicTacFarm2,
+    TicTacFarm3,
+    TicTacFarm4,
+    TicTacFarm5,
 };
