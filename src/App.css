@@ -45,6 +45,11 @@
   left: 0;
 }
 
+.carouselSplitLayout {
+  margin: 0;
+  margin-left: auto;
+}
+
 .carouselRightArrowImage {
   right: 0;
 }
@@ -130,7 +135,7 @@
 }
 
 .splitLayoutTile {
-  border: 1px solid black;
+ /* border: 1px solid black; */
   flex: 1;
   height: 100%;
 }

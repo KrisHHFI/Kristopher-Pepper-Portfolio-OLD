@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import '../../App.css';
 import { ComponentImageSources } from '../../BackEnd/ImageSources';
 
-const Carousel = ({ pageTitle, imageSources }) => {
+const Carousel = ({ imageSources, hasSplitLayout }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const images = Object.values(imageSources);
 
@@ -16,7 +16,9 @@ const Carousel = ({ pageTitle, imageSources }) => {
   };
 
   return (
-    <div className="carouselContainer">
+    <div
+      className={`carouselContainer ${hasSplitLayout ? 'carouselSplitLayout' : ''}`}
+    >
       <img
         src={ComponentImageSources.leftArrow}
         alt="Left Arrow"
@@ -35,10 +37,12 @@ const Carousel = ({ pageTitle, imageSources }) => {
 };
 
 Carousel.propTypes = {
-  pageTitle: PropTypes.string.isRequired,
   imageSources: PropTypes.object.isRequired,
-  leftArrow: PropTypes.string.isRequired,
-  rightArrow: PropTypes.string.isRequired
+  hasSplitLayout: PropTypes.bool
+};
+
+Carousel.defaultProps = {
+  hasSplitLayout: false
 };
 
 export default Carousel;

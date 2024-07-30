@@ -10,6 +10,7 @@ const SplitLayout = ({ imageSources }) => {
       <div className="splitLayoutTile">
         <Carousel
           imageSources={imageSources}
+          hasSplitLayout={true}
         />
       </div>
       <div className="splitLayoutTile">
