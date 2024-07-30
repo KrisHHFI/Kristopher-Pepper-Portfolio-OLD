@@ -13,7 +13,7 @@ const SplitLayout = ({ imageSources, text }) => {
           hasSplitLayout={true}
         />
       </div>
-      <div className="splitLayoutTile">
+      <div className="splitLayoutTile splitLayoutTextTile">
         {text && (
           <ul>
             {text.map((item, index) => (

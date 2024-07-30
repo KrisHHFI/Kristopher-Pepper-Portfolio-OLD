@@ -88,7 +88,7 @@
 }
 
 .navbar:hover,
-.navBarHamBurger:hover + .navbar {
+.navBarHamBurger:hover+.navbar {
   left: 0;
 }
 
@@ -118,7 +118,7 @@
 .pageContent {
   height: 93vh;
   width: calc(100vw - 440px);
-  
+
 }
 
 .pageTitle {
@@ -136,7 +136,24 @@
 }
 
 .splitLayoutTile {
- /* border: 1px solid black; */
+  /* border: 1px solid black; */
   flex: 1;
   height: 100%;
+  text-align: left;
+  align-content: space-evenly;
+}
+
+.splitLayoutTile ul {
+  display: flex;
+  font-size: 18px;
+  flex-direction: column;
+  /* or row */
+  justify-content: space-evenly;
+  height: 100%;
+}
+
+.splitLayoutTextTile {
+  height: calc(100% - 250px);
+  padding-bottom: 125px;
+  padding-top: 125px;
 }
