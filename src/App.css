@@ -116,9 +116,10 @@
 }
 
 .pageContent {
+  box-sizing: border-box;
   height: 93vh;
+  padding-top: 20px;
   width: calc(100vw - 440px);
-
 }
 
 .pageTitle {
@@ -136,7 +137,6 @@
 }
 
 .splitLayoutTile {
-  /* border: 1px solid black; */
   flex: 1;
   height: 100%;
   text-align: left;
@@ -147,13 +147,17 @@
   display: flex;
   font-size: 18px;
   flex-direction: column;
-  /* or row */
-  justify-content: space-evenly;
+  padding-left: 45px;
+  justify-content: center;
   height: 100%;
 }
 
+.splitLayoutTile ul li {
+  margin-bottom: 7px;
+  margin-top: 7px;
+}
+
 .splitLayoutTextTile {
-  height: calc(100% - 250px);
-  padding-bottom: 125px;
-  padding-top: 125px;
+  height: 100%;
+  box-sizing: border-box;
 }
