@@ -116,7 +116,7 @@
 }
 
 .pageContent {
-  height: 95vh;
+  height: 93vh;
   width: calc(100vw - 440px);
   
 }
@@ -124,7 +124,8 @@
 .pageTitle {
   font-size: 24px;
   font-weight: bold;
-  height: 5vh;
+  height: 7vh;
+  align-content: center;
 }
 
 .splitLayoutContainer {
