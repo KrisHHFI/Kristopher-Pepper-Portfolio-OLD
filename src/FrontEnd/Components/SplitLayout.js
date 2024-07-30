@@ -1,13 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import '../../App.css';
+import Carousel from './Carousel';
 
 const SplitLayout = ({ imageSources }) => {
 
   return (
     <div className="splitLayoutContainer">
       <div className="splitLayoutTile">
-        {/* Optionally add content here */}
+        <Carousel
+          imageSources={imageSources}
+        />
       </div>
       <div className="splitLayoutTile">
         {/* Optionally add content here */}

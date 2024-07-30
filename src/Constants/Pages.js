@@ -3,19 +3,19 @@ import { BandImageSources, BWPortraitImageSources, ColourPortraitSources, TicTac
 const pages = {
   'BW Portraits': {
     title: 'BW Portraits',
-    hasCarousel: true,
+    hasFullPageCarousel: true,
     imageSources: BWPortraitImageSources,
     section: 'Photography',
   },
   'Colour Portraits': {
     title: 'Colour Portraits',
-    hasCarousel: true,
+    hasFullPageCarousel: true,
     imageSources: ColourPortraitSources,
     section: 'Photography',
   },
   'Bands': {
     title: 'Bands',
-    hasCarousel: true,
+    hasFullPageCarousel: true,
     imageSources: BandImageSources,
     section: 'Photography',
   },

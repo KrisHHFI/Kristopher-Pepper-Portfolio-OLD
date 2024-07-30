@@ -7,14 +7,14 @@ import pages from './Constants/Pages';
 
 function App() {
   const [activePage, setActivePage] = useState('BW Portraits');
-  const { title, hasCarousel = false, hasSplitLayout = false, imageSources } = pages[activePage];
+  const { title, hasFullPageCarousel = false, hasSplitLayout = false, imageSources } = pages[activePage];
 
   return (
     <div className="App">
       <Navbar pages={pages} onLinkClick={setActivePage} />
       <PageContent
         pageTitle={title}
-        hasCarousel={hasCarousel}
+        hasFullPageCarousel={hasFullPageCarousel}
         hasSplitLayout={hasSplitLayout}
         imageSources={imageSources}
       />

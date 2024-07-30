@@ -3,16 +3,13 @@ import PropTypes from 'prop-types';
 import Carousel from './Carousel';
 import SplitLayout from './SplitLayout';
 import PageTitle from './PageTitle';
-import { ComponentImageSources } from '../../BackEnd/ImageSources';
 
-const PageContent = ({ pageTitle, hasCarousel, hasSplitLayout, imageSources }) => {
+const PageContent = ({ pageTitle, hasFullPageCarousel, hasSplitLayout, imageSources }) => {
   return (
     <div className="pageContent">
-      {hasCarousel && (
+      {hasFullPageCarousel && (
         <Carousel
           imageSources={imageSources}
-          leftArrow={ComponentImageSources.leftArrow}
-          rightArrow={ComponentImageSources.rightArrow}
         />
       )}
         {hasSplitLayout && (
@@ -29,13 +26,13 @@ const PageContent = ({ pageTitle, hasCarousel, hasSplitLayout, imageSources }) =
 
 PageContent.propTypes = {
   pageTitle: PropTypes.string.isRequired,
-  hasCarousel: PropTypes.bool,
+  hasFullPageCarousel: PropTypes.bool,
   hasSplitLayout: PropTypes.bool,
   imageSources: PropTypes.object.isRequired,
 };
 
 PageContent.defaultProps = {
-  hasCarousel: false,
+  hasFullPageCarousel: false,
 };
 
 export default PageContent;

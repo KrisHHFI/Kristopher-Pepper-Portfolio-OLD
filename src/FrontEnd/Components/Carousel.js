@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import '../../App.css';
+import { ComponentImageSources } from '../../BackEnd/ImageSources';
 
-const Carousel = ({ pageTitle, imageSources, leftArrow, rightArrow }) => {
+const Carousel = ({ pageTitle, imageSources }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const images = Object.values(imageSources);
 
@@ -17,14 +18,14 @@ const Carousel = ({ pageTitle, imageSources, leftArrow, rightArrow }) => {
   return (
     <div className="carouselContainer">
       <img
-        src={leftArrow}
+        src={ComponentImageSources.leftArrow}
         alt="Left Arrow"
         className="arrowImage carouselLeftArrowImage"
         onClick={handlePrev}
       />
       <img src={images[currentImageIndex]} alt="carousel" className="carouselImage" />
       <img
-        src={rightArrow}
+        src={ComponentImageSources.rightArrow}
         alt="Right Arrow"
         className="arrowImage carouselRightArrowImage"
         onClick={handleNext}
