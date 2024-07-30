@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import '../../App.css';
 import Carousel from './Carousel';
 
-const SplitLayout = ({ imageSources }) => {
+const SplitLayout = ({ imageSources, text }) => {
 
   return (
     <div className="splitLayoutContainer">
@@ -14,7 +14,13 @@ const SplitLayout = ({ imageSources }) => {
         />
       </div>
       <div className="splitLayoutTile">
-        {/* Optionally add content here */}
+        {text && (
+          <ul>
+            {text.map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
+          </ul>
+        )}
       </div>
     </div>
   );
@@ -22,6 +28,7 @@ const SplitLayout = ({ imageSources }) => {
 
 SplitLayout.propTypes = {
   imageSources: PropTypes.object.isRequired,
+  text: PropTypes.arrayOf(PropTypes.string), // Make text an optional prop
 };
 
 export default SplitLayout;

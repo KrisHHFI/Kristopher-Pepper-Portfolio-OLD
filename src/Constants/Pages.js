@@ -24,6 +24,12 @@ const pages = {
     hasSplitLayout: true,
     imageSources: TicTacFarmImageSources,
     section: 'Coding',
+    text: [
+      ' A farm themed Tic-tac-toe published on the Google Play Store',
+      ' Features different grid sizes, local multiplayer, play against the computer, music and SFX',
+      ' More than 2000 unique installs',
+      ' Made in 2024 using React Native and JavaScript'
+    ]
   },
   'This Site': {
     title: 'This Site',

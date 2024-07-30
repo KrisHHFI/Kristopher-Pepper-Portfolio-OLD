@@ -4,7 +4,7 @@ import Carousel from './Carousel';
 import SplitLayout from './SplitLayout';
 import PageTitle from './PageTitle';
 
-const PageContent = ({ pageTitle, hasFullPageCarousel, hasSplitLayout, imageSources }) => {
+const PageContent = ({ pageTitle, hasFullPageCarousel, hasSplitLayout, imageSources, text }) => {
   return (
     <div className="pageContent">
       {hasFullPageCarousel && (
@@ -15,6 +15,7 @@ const PageContent = ({ pageTitle, hasFullPageCarousel, hasSplitLayout, imageSour
         {hasSplitLayout && (
         <SplitLayout
           imageSources={imageSources}
+          text={text}
         />
       )}
       <PageTitle
@@ -29,6 +30,7 @@ PageContent.propTypes = {
   hasFullPageCarousel: PropTypes.bool,
   hasSplitLayout: PropTypes.bool,
   imageSources: PropTypes.object.isRequired,
+  text: PropTypes.string,
 };
 
 PageContent.defaultProps = {

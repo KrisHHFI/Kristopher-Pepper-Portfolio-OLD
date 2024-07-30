@@ -1,4 +1,3 @@
-// App.js
 import React, { useState } from 'react';
 import './App.css';
 import PageContent from './FrontEnd/Components/PageContent';
@@ -7,7 +6,7 @@ import pages from './Constants/Pages';
 
 function App() {
   const [activePage, setActivePage] = useState('BW Portraits');
-  const { title, hasFullPageCarousel = false, hasSplitLayout = false, imageSources } = pages[activePage];
+  const { title, hasFullPageCarousel = false, hasSplitLayout = false, imageSources, text = [] } = pages[activePage];
 
   return (
     <div className="App">
@@ -17,6 +16,7 @@ function App() {
         hasFullPageCarousel={hasFullPageCarousel}
         hasSplitLayout={hasSplitLayout}
         imageSources={imageSources}
+        text={text}
       />
     </div>
   );
