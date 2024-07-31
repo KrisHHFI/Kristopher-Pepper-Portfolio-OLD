@@ -53,11 +53,6 @@ const pages = {
     imageSources: BandImageSources,
     section: 'About',
   },
-  'Contact': {
-    title: 'Contact',
-    imageSources: BandImageSources,
-    section: 'About',
-  },
 };
 
 export default pages;
