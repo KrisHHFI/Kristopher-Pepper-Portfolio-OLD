@@ -51,8 +51,19 @@ const pages = {
   },
   'Me': {
     title: 'Me',
-    imageSources: BandImageSources,
+    hasSplitLayout: true,
+    imageSources: TicTacFarmImageSources,
     section: 'About',
+    text: [
+      'I\'m from a small town in UK about an hour from London. In my early twenties I pursued a career in ' +
+      'portrait photography and I moved to Finland.',
+      'My career in photography wasn\'t working out and then the pandemic came which disrupted it entirely.' +
+      ' During this time I discovered coding and I decided to study it Haaga-Helia in Helsinki.',
+      'For my internship I worked as a web developer at the Game Development World Championship (GDWC).' +
+      'After graduating, I worked as a software developer at Taika Tech. ',
+      'Aside from the photography and coding, I have been doing manual labour work since I was 17 years old. ' +
+      'Now, I am seeking full time employment as a software developer.'
+    ]
   },
 };
 
