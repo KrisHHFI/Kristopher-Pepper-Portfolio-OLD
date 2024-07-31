@@ -14,10 +14,16 @@ const GitHubRepositories = () => {
     <div>
       <ul>
         {repos.map(repo => (
-          <li key={repo.id}>
+          <li key={repo.id} style={{ marginBottom: '15px' }}>
             <a href={repo.html_url} target="_blank" rel="noopener noreferrer">
               {repo.name}
             </a>
+            <div>
+              <strong>Language:</strong> {repo.language || 'N/A'}
+            </div>
+            <div>
+              <strong>Created At:</strong> {new Date(repo.created_at).toLocaleDateString()}
+            </div>
           </li>
         ))}
       </ul>
