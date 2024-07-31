@@ -129,6 +129,29 @@
   align-content: center;
 }
 
+.gitHubRepositoriesContainer {
+  border-bottom: 1px solid #ccc;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.gitHubRepositoriesItemContainer {
+  margin-bottom: 15px;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.gitHubRepositoriesLink {
+  font-size: 18px;
+  color: #0073e6;
+  text-decoration: none;
+}
+
+.gitHubRepositoriesLink:hover {
+  text-decoration: underline;
+}
+
+
 .splitLayoutContainer {
   display: flex;
   flex-direction: row;

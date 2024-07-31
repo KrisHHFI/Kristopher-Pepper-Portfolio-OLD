@@ -43,8 +43,8 @@ const pages = {
       'Made in 2024 using React and TypeScript'
     ]
   },
-  'Other Projects': {
-    title: 'Other Projects',
+  'GitHub Projects': {
+    title: 'GitHub Projects',
     hasGitHubRepositories: true,
     imageSources: BandImageSources,
     section: 'Coding',
