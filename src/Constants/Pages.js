@@ -1,4 +1,4 @@
-import { BandImageSources, BWPortraitImageSources, ColourPortraitSources, TicTacFarmImageSources, WeatherAppImageSources } from '../BackEnd/ImageSources';
+import { BandImageSources, BWPortraitImageSources, ColourPortraitSources, AboutPageImageSources, TicTacFarmImageSources, WeatherAppImageSources } from '../BackEnd/ImageSources';
 
 const pages = {
   'BW Portraits': {
@@ -52,11 +52,11 @@ const pages = {
   'Me': {
     title: 'Me',
     hasSplitLayout: true,
-    imageSources: TicTacFarmImageSources,
+    imageSources: AboutPageImageSources,
     section: 'About',
     text: [
-      'I\'m from a small town in UK about an hour from London. In my early twenties I pursued a career in ' +
-      'portrait photography and I moved to Finland.',
+      'I\'m from a small town in the UK which is about an hour north of London. In my early twenties I' +
+      'pursued a career in portrait photography and I moved to Finland.',
       'My career in photography wasn\'t working out and then the pandemic came which disrupted it entirely.' +
       ' During this time I discovered coding and I decided to study it Haaga-Helia in Helsinki.',
       'For my internship I worked as a web developer at the Game Development World Championship (GDWC).' +

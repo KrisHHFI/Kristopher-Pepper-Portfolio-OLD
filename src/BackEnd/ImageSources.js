@@ -29,6 +29,7 @@ import colour8 from '../Assets/Images/Colour8.jpg';
 import colour9 from '../Assets/Images/Colour9.jpg';
 import colour10 from '../Assets/Images/Colour10.jpg';
 import leftArrow from '../Assets/Images/LeftArrow.png';
+import me from '../Assets/Images/Me.gif';
 import rightArrow from '../Assets/Images/RightArrow.png';
 import TicTacFarm1 from '../Assets/Images/TicTacFarm1.png';
 import TicTacFarm2 from '../Assets/Images/TicTacFarm2.png';
@@ -97,4 +98,8 @@ export const WeatherAppImageSources = {
     WeatherApp2,
     WeatherApp3,
     WeatherApp4,
+};
+
+export const AboutPageImageSources = {
+    me,
 };
