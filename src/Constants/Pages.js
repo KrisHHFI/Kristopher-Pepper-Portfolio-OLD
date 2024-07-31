@@ -25,7 +25,7 @@ const pages = {
     imageSources: TicTacFarmImageSources,
     section: 'Coding',
     text: [
-      'A farm themed Tic-tac-toe published on the Google Play Store',
+      'A farm themed Tic-tac-toe game published on the Google Play Store',
       'Different grid sizes, local multiplayer, play against the computer, music and SFX',
       'More than 2000 unique installs',
       'Made in 2024 using React Native and JavaScript',
@@ -56,14 +56,14 @@ const pages = {
     noBulletPoints: true,
     section: 'About',
     text: [
-      'I\'m from a small town in the UK which is about an hour north of London. In my early twenties I' +
+      'I\'m from a small town in the UK which is about an hour north of London. In my early twenties I ' +
       'pursued a career in portrait photography and I moved to Finland.',
       'My career in photography wasn\'t working out and then the pandemic came which disrupted it entirely.' +
-      ' During this time I discovered coding and I decided to study it Haaga-Helia in Helsinki.',
-      'For my internship I worked as a web developer at the Game Development World Championship (GDWC).' +
+      ' During this time I discovered coding and I decided to study it at Haaga-Helia in Helsinki.',
+      'For my internship I worked as a web developer at the Game Development World Championship (GDWC). ' +
       'After graduating, I worked as a software developer at Taika Tech. ',
       'Aside from the photography and coding, I have been doing manual labour work since I was 17 years old. ' +
-      'Now, I am seeking full time employment as a software developer.'
+      'Now, I am seeking full time employment as a software developer in the Helsinki area.'
     ]
   },
 };

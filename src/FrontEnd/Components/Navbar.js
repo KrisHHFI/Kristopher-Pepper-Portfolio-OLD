@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import '../../App.css';
 
-const Navbar = ({ pages, onLinkClick }) => {
+const Navbar = ({ pages, onLinkClick, activePage }) => {
   const sections = {};
 
   // Group pages by sections
@@ -26,7 +26,11 @@ const Navbar = ({ pages, onLinkClick }) => {
             <div className="navBarH2">{section}</div>
             <div className="navBarLinks">
               {sections[section].map((page) => (
-                <div key={page.title} onClick={() => onLinkClick(page.title)}>
+                <div
+                  key={page.title}
+                  onClick={() => onLinkClick(page.title)}
+                  className={activePage === page.title ? 'activeNavLink' : ''}
+                >
                   {page.title}
                 </div>
               ))}
@@ -41,6 +45,7 @@ const Navbar = ({ pages, onLinkClick }) => {
 Navbar.propTypes = {
   pages: PropTypes.object.isRequired,
   onLinkClick: PropTypes.func.isRequired,
+  activePage: PropTypes.string.isRequired,
 };
 
 export default Navbar;

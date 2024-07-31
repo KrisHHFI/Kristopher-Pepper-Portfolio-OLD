@@ -10,7 +10,7 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar pages={pages} onLinkClick={setActivePage} />
+      <Navbar pages={pages} onLinkClick={setActivePage} activePage={activePage} />
       <PageContent
         pageTitle={title}
         hasFullPageCarousel={hasFullPageCarousel}

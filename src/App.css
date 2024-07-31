@@ -109,6 +109,11 @@
   width: 160px;
 }
 
+.activeNavLink {
+  text-decoration: underline;
+  font-weight: bold; /* Optional: To make it stand out more */
+}
+
 .navbar:hover,
 .navBarHamBurger:hover+.navbar {
   left: 0;
