@@ -45,6 +45,7 @@ const pages = {
   },
   'Other Projects': {
     title: 'Other Projects',
+    hasGitHubRepositories: true,
     imageSources: BandImageSources,
     section: 'Coding',
   },
