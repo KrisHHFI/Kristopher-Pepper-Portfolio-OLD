@@ -1,4 +1,4 @@
-import { BandImageSources, BWPortraitImageSources, ColourPortraitSources, TicTacFarmImageSources } from '../BackEnd/ImageSources';
+import { BandImageSources, BWPortraitImageSources, ColourPortraitSources, TicTacFarmImageSources, WeatherAppImageSources } from '../BackEnd/ImageSources';
 
 const pages = {
   'BW Portraits': {
@@ -25,23 +25,23 @@ const pages = {
     imageSources: TicTacFarmImageSources,
     section: 'Coding',
     text: [
-      ' A farm themed Tic-tac-toe published on the Google Play Store',
-      ' Different grid sizes, local multiplayer, play against the computer, music and SFX',
-      ' More than 2000 unique installs',
-      ' Made in 2024 using React Native and JavaScript'
+      'A farm themed Tic-tac-toe published on the Google Play Store',
+      'Different grid sizes, local multiplayer, play against the computer, music and SFX',
+      'More than 2000 unique installs',
+      'Made in 2024 using React Native and JavaScript',
     ]
-  },
-  'This Site': {
-    title: 'This Site',
-    hasSplitLayout: true,
-    imageSources: BandImageSources,
-    section: 'Coding',
   },
   'React Weather App': {
     title: 'React Weather App',
     hasSplitLayout: true,
-    imageSources: BandImageSources,
+    imageSources: WeatherAppImageSources,
     section: 'Coding',
+    text: [
+      'A web based weather application',
+      'Made to accommodate all screen sizes',
+      'Uses OpenWeatherMap and REST API to fetch weather data',
+      'Made in 2024 using React and TypeScript'
+    ]
   },
   'Other Projects': {
     title: 'Other Projects',

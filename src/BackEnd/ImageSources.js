@@ -35,6 +35,10 @@ import TicTacFarm2 from '../Assets/Images/TicTacFarm2.png';
 import TicTacFarm3 from '../Assets/Images/TicTacFarm3.png';
 import TicTacFarm4 from '../Assets/Images/TicTacFarm4.png';
 import TicTacFarm5 from '../Assets/Images/TicTacFarm5.png';
+import WeatherApp1 from '../Assets/Images/WeatherApp1.png';
+import WeatherApp2 from '../Assets/Images/WeatherApp2.png';
+import WeatherApp3 from '../Assets/Images/WeatherApp3.png';
+import WeatherApp4 from '../Assets/Images/WeatherApp4.png';
 
 export const BWPortraitImageSources = {
     bw1,
@@ -86,4 +90,11 @@ export const TicTacFarmImageSources = {
     TicTacFarm3,
     TicTacFarm4,
     TicTacFarm5,
+};
+
+export const WeatherAppImageSources = {
+    WeatherApp1,
+    WeatherApp2,
+    WeatherApp3,
+    WeatherApp4,
 };
