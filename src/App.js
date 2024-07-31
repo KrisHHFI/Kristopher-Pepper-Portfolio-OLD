@@ -6,7 +6,7 @@ import pages from './Constants/Pages';
 
 function App() {
   const [activePage, setActivePage] = useState('BW Portraits');
-  const { title, hasFullPageCarousel = false, hasSplitLayout = false, hasGitHubRepositories = false, imageSources, text = [] } = pages[activePage];
+  const { title, hasFullPageCarousel = false, hasSplitLayout = false, hasGitHubRepositories = false, noBulletPoints = false, imageSources, text = [] } = pages[activePage];
 
   return (
     <div className="App">
@@ -17,6 +17,7 @@ function App() {
         hasSplitLayout={hasSplitLayout}
         hasGitHubRepositories={hasGitHubRepositories}
         imageSources={imageSources}
+        noBulletPoints={noBulletPoints}
         text={text}
       />
     </div>

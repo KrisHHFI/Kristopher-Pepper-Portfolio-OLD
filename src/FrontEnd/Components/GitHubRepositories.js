@@ -22,7 +22,7 @@ const GitHubRepositories = () => {
             <strong>Language:</strong> {repo.language || 'N/A'}
           </div>
           <div>
-            <strong>Created At:</strong> {new Date(repo.created_at).toLocaleDateString()}
+            <strong>Created:</strong> {new Date(repo.created_at).toLocaleDateString()}
           </div>
         </div>
       ))}

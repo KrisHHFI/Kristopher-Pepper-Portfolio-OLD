@@ -53,6 +53,7 @@ const pages = {
     title: 'Me',
     hasSplitLayout: true,
     imageSources: AboutPageImageSources,
+    noBulletPoints: true,
     section: 'About',
     text: [
       'I\'m from a small town in the UK which is about an hour north of London. In my early twenties I' +

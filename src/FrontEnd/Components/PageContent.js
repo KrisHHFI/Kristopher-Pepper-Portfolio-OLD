@@ -5,7 +5,7 @@ import SplitLayout from './SplitLayout';
 import PageTitle from './PageTitle';
 import GitHubRepositories from './GitHubRepositories';
 
-const PageContent = ({ pageTitle, hasFullPageCarousel, hasSplitLayout, hasGitHubRepositories, imageSources, text }) => {
+const PageContent = ({ pageTitle, hasFullPageCarousel, hasSplitLayout, hasGitHubRepositories, imageSources, noBulletPoints, text }) => {
   return (
     <div className="pageContent">
       {hasFullPageCarousel && (
@@ -17,12 +17,11 @@ const PageContent = ({ pageTitle, hasFullPageCarousel, hasSplitLayout, hasGitHub
         <SplitLayout
           imageSources={imageSources}
           text={text}
+          noBulletPoints={noBulletPoints} // Pass the noBulletPoints prop to SplitLayout
         />
       )}
       {hasGitHubRepositories && (
-        <GitHubRepositories
-       
-        />
+        <GitHubRepositories />
       )}
       <PageTitle
         pageTitle={pageTitle}
@@ -37,11 +36,15 @@ PageContent.propTypes = {
   hasSplitLayout: PropTypes.bool,
   hasGitHubRepositories: PropTypes.bool,
   imageSources: PropTypes.object.isRequired,
-  text: PropTypes.string,
+  text: PropTypes.arrayOf(PropTypes.string), // Updated to arrayOf(PropTypes.string)
+  noBulletPoints: PropTypes.bool, // Add noBulletPoints as a prop type
 };
 
 PageContent.defaultProps = {
   hasFullPageCarousel: false,
+  hasSplitLayout: false,
+  hasGitHubRepositories: false,
+  noBulletPoints: false, // Default to showing bullet points
 };
 
 export default PageContent;

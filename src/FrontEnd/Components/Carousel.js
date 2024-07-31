@@ -19,19 +19,23 @@ const Carousel = ({ imageSources, hasSplitLayout }) => {
     <div
       className={`carouselContainer ${hasSplitLayout ? 'carouselSplitLayout' : ''}`}
     >
-      <img
-        src={ComponentImageSources.leftArrow}
-        alt="Left Arrow"
-        className="arrowImage carouselLeftArrowImage"
-        onClick={handlePrev}
-      />
+      {images.length > 1 && (
+        <img
+          src={ComponentImageSources.leftArrow}
+          alt="Left Arrow"
+          className="arrowImage carouselLeftArrowImage"
+          onClick={handlePrev}
+        />
+      )}
       <img src={images[currentImageIndex]} alt="carousel" className="carouselImage" />
-      <img
-        src={ComponentImageSources.rightArrow}
-        alt="Right Arrow"
-        className="arrowImage carouselRightArrowImage"
-        onClick={handleNext}
-      />
+      {images.length > 1 && (
+        <img
+          src={ComponentImageSources.rightArrow}
+          alt="Right Arrow"
+          className="arrowImage carouselRightArrowImage"
+          onClick={handleNext}
+        />
+      )}
     </div>
   );
 };
