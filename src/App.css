@@ -55,8 +55,8 @@
 }
 
 .carouselSplitLayout {
-  margin-left: auto;
   margin: 0;
+  margin-left: auto; /* Needs to be after the margin: 0 */
 }
 
 .gitHubRepositoriesContainer {
@@ -207,10 +207,7 @@
 }
 
 .splitLayoutTile {
-  display: flex;
   align-content: center;
-  justify-content: center;
-  align-items: center;
   flex: 1;
   flex-direction: column;
   height: 100%;
