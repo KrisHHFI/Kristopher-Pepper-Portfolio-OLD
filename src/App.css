@@ -133,6 +133,19 @@
   margin-bottom: 10px;
 }
 
+.navBarIcon {
+  height: 30px;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.navBarIconContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-top: 50px;
+}
+
 .navBarLinks {
   cursor: pointer;
   display: flex;
@@ -151,9 +164,10 @@
 
 .pageContent {
   border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
   box-sizing: border-box;
-  height: 93vh;
-  padding-top: 20px;
+  height: calc(93vh - 20px);
+  margin-top: 20px;
   width: calc(100vw - 440px);
 }
 

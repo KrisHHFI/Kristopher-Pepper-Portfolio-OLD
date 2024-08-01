@@ -40,6 +40,8 @@ import WeatherApp1 from '../Assets/Images/WeatherApp1.png';
 import WeatherApp2 from '../Assets/Images/WeatherApp2.png';
 import WeatherApp3 from '../Assets/Images/WeatherApp3.png';
 import WeatherApp4 from '../Assets/Images/WeatherApp4.png';
+import GitHub from '../Assets/Images/GitHub.png';
+import LinkedIn from '../Assets/Images/LinkedIn.png';
 
 export const BWPortraitImageSources = {
     bw1,
@@ -81,7 +83,9 @@ export const BandImageSources = {
 };
 
 export const ComponentImageSources = {
+    GitHub,
     leftArrow,
+    LinkedIn,
     rightArrow,
 };
 

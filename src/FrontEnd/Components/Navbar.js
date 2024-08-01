@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import '../../App.css';
+import { ComponentImageSources } from '../../BackEnd/ImageSources';
 
 const Navbar = ({ pages, onLinkClick, activePage }) => {
   const sections = {};
@@ -17,7 +18,7 @@ const Navbar = ({ pages, onLinkClick, activePage }) => {
   return (
     <div className="navbarWrapper">
       <div className="navBarHamBurger">
-        <div className="navBarHamBurgerText">M<br/>e<br/>n<br/>u</div>
+        <div className="navBarHamBurgerText">M<br />e<br />n<br />u</div>
       </div>
       <div className="navbar">
         <div className="navBarH1">Kristopher Pepper</div>
@@ -37,6 +38,19 @@ const Navbar = ({ pages, onLinkClick, activePage }) => {
             </div>
           </div>
         ))}
+        <div className="navBarIconContainer">
+          <img
+            src={ComponentImageSources.GitHub}
+            alt="GitHub Icon"
+            className="navBarIcon"
+          />
+          <img
+            src={ComponentImageSources.LinkedIn}
+            alt="LinkedIn Icon"
+            className="navBarIcon"
+          />
+        </div>
+
       </div>
     </div>
   );
