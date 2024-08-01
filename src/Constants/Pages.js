@@ -25,10 +25,10 @@ const pages = {
     imageSources: TicTacFarmImageSources,
     section: 'Coding',
     text: [
-      'A farm themed Tic-tac-toe game published on the Google Play Store',
-      'Different grid sizes, local multiplayer, play against the computer, music and SFX',
-      'More than 2000 unique installs',
-      'Made in 2024 using React Native and JavaScript',
+      'A farm themed Tic-tac-toe game published on the Google Play Store, which has over 2000 downloads',
+      'Features different grid sizes, local multiplayer, play against the computer, music and SFX',
+      'Began the project in 2024 to use as a portfolio piece',
+      'Made using React Native and JavaScript',
     ]
   },
   'React Weather App': {

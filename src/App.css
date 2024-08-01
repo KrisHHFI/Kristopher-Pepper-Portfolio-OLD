@@ -64,6 +64,7 @@
   margin-bottom: 15px;
   padding: 10px;
   border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
 }
 
 .gitHubRepositoriesLink {
@@ -149,6 +150,7 @@
 }
 
 .pageContent {
+  border-bottom: 1px solid #ccc;
   box-sizing: border-box;
   height: 93vh;
   padding-top: 20px;
