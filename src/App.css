@@ -112,7 +112,7 @@
 
 .activeNavLink {
   text-decoration: underline;
-  font-weight: bold; /* Optional: To make it stand out more */
+  font-weight: bold;
 }
 
 .navbar:hover,
@@ -133,17 +133,17 @@
   margin-bottom: 10px;
 }
 
-.navBarIcon {
+.socialIcon {
   height: 30px;
   max-width: 100%;
   object-fit: contain;
 }
 
-.navBarIconContainer {
+.socialIconsContainer {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  background-color: red;
+  padding-top: 5vh;
 }
 
 .navBarLinks {
@@ -179,7 +179,6 @@
 }
 
 .splitLayoutContainer {
-  background-color: cyan;
   display: flex;
   flex-direction: row;
   height: 100%;
@@ -190,7 +189,8 @@
   flex: 1;
   height: 100%;
   text-align: left;
-  align-content: space-evenly;
+  align-content: center;
+  flex-direction: column;
 }
 
 .splitLayoutTile ul {
@@ -198,16 +198,9 @@
   font-size: 18px;
   flex-direction: column;
   padding-left: 45px;
-  justify-content: center;
-  height: 100%;
 }
 
 .splitLayoutTile ul li {
   margin-bottom: 7px;
   margin-top: 7px;
-}
-
-.splitLayoutTextTile {
-  height: 100%;
-  box-sizing: border-box;
 }

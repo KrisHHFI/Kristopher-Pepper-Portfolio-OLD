@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import '../../App.css';
-import { ComponentImageSources } from '../../BackEnd/ImageSources';
+import SocialIcons from './SocialIcons';
+import socialIconsData from '../../Constants/SocialIconsData';
 
 const Navbar = ({ pages, onLinkClick, activePage }) => {
   const sections = {};
@@ -38,24 +39,7 @@ const Navbar = ({ pages, onLinkClick, activePage }) => {
             </div>
           </div>
         ))}
-        <div className="navBarSection">
-          <div className="navBarIconContainer">
-            <a href="https://github.com/KrisHHFI" target="_blank" rel="noopener noreferrer">
-              <img
-                src={ComponentImageSources.GitHub}
-                alt="GitHub Icon"
-                className="navBarIcon"
-              />
-            </a>
-            <a href="https://www.linkedin.com/in/kristopher-pepper-824184136/" target="_blank" rel="noopener noreferrer">
-              <img
-                src={ComponentImageSources.LinkedIn}
-                alt="LinkedIn Icon"
-                className="navBarIcon"
-              />
-            </a>
-          </div>
-        </div>
+        <SocialIcons icons={socialIconsData} />
       </div>
     </div>
   );
