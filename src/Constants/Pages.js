@@ -51,6 +51,7 @@ const pages = {
   },
   'Me': {
     title: 'Me',
+    hasIcons: true,
     hasSplitLayout: true,
     imageSources: AboutPageImageSources,
     noBulletPoints: true,

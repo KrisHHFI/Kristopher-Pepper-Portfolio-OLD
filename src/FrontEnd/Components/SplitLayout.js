@@ -2,9 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import '../../App.css';
 import Carousel from './Carousel';
+import { ComponentImageSources } from '../../BackEnd/ImageSources';
 
-const SplitLayout = ({ imageSources, noBulletPoints, text }) => {
-
+const SplitLayout = ({ hasIcons, imageSources, noBulletPoints, text }) => {
   return (
     <div className="splitLayoutContainer">
       <div className="splitLayoutTile">
@@ -21,6 +21,24 @@ const SplitLayout = ({ imageSources, noBulletPoints, text }) => {
             ))}
           </ul>
         )}
+        {hasIcons && (
+          <div className="navBarIconContainer">
+            <a href="https://github.com/KrisHHFI" target="_blank" rel="noopener noreferrer">
+              <img
+                src={ComponentImageSources.GitHub}
+                alt="GitHub Icon"
+                className="navBarIcon"
+              />
+            </a>
+            <a href="https://www.linkedin.com/in/kristopher-pepper-824184136/" target="_blank" rel="noopener noreferrer">
+              <img
+                src={ComponentImageSources.LinkedIn}
+                alt="LinkedIn Icon"
+                className="navBarIcon"
+              />
+            </a>
+          </div>
+        )}
       </div>
     </div>
   );
@@ -28,12 +46,14 @@ const SplitLayout = ({ imageSources, noBulletPoints, text }) => {
 
 SplitLayout.propTypes = {
   imageSources: PropTypes.object.isRequired,
-  text: PropTypes.arrayOf(PropTypes.string), // Make text an optional prop
-  noBulletPoints: PropTypes.bool, // Add noBulletPoints as a prop type
+  text: PropTypes.arrayOf(PropTypes.string),
+  noBulletPoints: PropTypes.bool,
+  hasIcons: PropTypes.bool,
 };
 
 SplitLayout.defaultProps = {
-  noBulletPoints: false, // Default to showing bullet points
+  noBulletPoints: false,
+  hasIcons: false,
 };
 
 export default SplitLayout;

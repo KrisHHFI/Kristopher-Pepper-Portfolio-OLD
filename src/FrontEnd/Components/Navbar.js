@@ -38,19 +38,24 @@ const Navbar = ({ pages, onLinkClick, activePage }) => {
             </div>
           </div>
         ))}
-        <div className="navBarIconContainer">
-          <img
-            src={ComponentImageSources.GitHub}
-            alt="GitHub Icon"
-            className="navBarIcon"
-          />
-          <img
-            src={ComponentImageSources.LinkedIn}
-            alt="LinkedIn Icon"
-            className="navBarIcon"
-          />
+        <div className="navBarSection">
+          <div className="navBarIconContainer">
+            <a href="https://github.com/KrisHHFI" target="_blank" rel="noopener noreferrer">
+              <img
+                src={ComponentImageSources.GitHub}
+                alt="GitHub Icon"
+                className="navBarIcon"
+              />
+            </a>
+            <a href="https://www.linkedin.com/in/kristopher-pepper-824184136/" target="_blank" rel="noopener noreferrer">
+              <img
+                src={ComponentImageSources.LinkedIn}
+                alt="LinkedIn Icon"
+                className="navBarIcon"
+              />
+            </a>
+          </div>
         </div>
-
       </div>
     </div>
   );
