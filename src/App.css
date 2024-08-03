@@ -30,7 +30,7 @@
   margin: auto;
   overflow: hidden;
   position: relative;
-  width: fit-content;
+  width: auto;
 }
 
 .carouselContainer .arrowImage:hover {
@@ -57,6 +57,7 @@
 .carouselSplitLayout {
   margin: 0;
   margin-left: auto; /* Needs to be after the margin: 0 */
+  width: fit-content;
 }
 
 .gitHubRepositoriesContainer {
@@ -171,7 +172,7 @@
   box-sizing: border-box;
   height: calc(93vh - 20px);
   margin-top: 20px;
-  width: calc(100vw - 440px);
+  width: 85vw;
 }
 
 .pageTitle {
