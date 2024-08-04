@@ -232,28 +232,53 @@
 
 
 @media (max-width: 600px) {
+  .navbar {
+    height: fit-content;
+    left: 0px;
+    top: -100%;
+    transition: top 0.3s ease;
+    width: 100vw;
+  }
+
+  .navBarH1 {
+    margin-bottom: 10px;
+  }
+
+  .navBarH2 {
+    font-size: 22px;
+    margin-bottom: 0px;
+  }
+
+  .navBarLinks {
+   font-size: 18px;
+  }
+
+  .navBarSection {
+    margin-top: 5px;
+  }
+
   .navBarHamBurger {
     height: 50px;
     width: 100vw;
   }
 
   .navBarHamBurgerText {
-    writing-mode: horizontal-tb; /* Normal horizontal text */
-    text-orientation: initial; /* Reset text orientation */
+    writing-mode: horizontal-tb;
+    /* Normal horizontal text */
+    text-orientation: initial;
+    /* Reset text orientation */
+  }
+
+  .navbar:hover,
+  .navBarHamBurger:hover+.navbar {
+    top: 0;
+  }
+
+  .socialIconsContainer {
+    padding-top: 0px;
   }
 }
 
 /*
-.navBarHamBurger {
-  background-color: lightgray;
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  justify-content: center;
-  left: 0;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 50px;
-}
+
 */
