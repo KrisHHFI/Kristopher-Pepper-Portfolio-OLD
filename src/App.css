@@ -56,7 +56,8 @@
 
 .carouselSplitLayout {
   margin: 0;
-  margin-left: auto; /* Needs to be after the margin: 0 */
+  margin-left: auto;
+  /* Needs to be after the margin: 0 */
   width: fit-content;
 }
 
@@ -91,8 +92,7 @@
   justify-content: center;
   left: 0;
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 0px;
   width: 50px;
 }
 
@@ -229,3 +229,31 @@
   margin-bottom: 7px;
   margin-top: 7px;
 }
+
+
+@media (max-width: 600px) {
+  .navBarHamBurger {
+    height: 50px;
+    width: 100vw;
+  }
+
+  .navBarHamBurgerText {
+    writing-mode: horizontal-tb; /* Normal horizontal text */
+    text-orientation: initial; /* Reset text orientation */
+  }
+}
+
+/*
+.navBarHamBurger {
+  background-color: lightgray;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+}
+*/
