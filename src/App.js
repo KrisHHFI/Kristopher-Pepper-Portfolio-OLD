@@ -19,7 +19,6 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar pages={pages} onLinkClick={setActivePage} activePage={activePage} />
       <PageContent
         pageTitle={title}
         hasFullPageCarousel={hasFullPageCarousel}
@@ -30,6 +29,7 @@ function App() {
         noBulletPoints={noBulletPoints}
         text={text}
       />
+      <Navbar pages={pages} onLinkClick={setActivePage} activePage={activePage} />
     </div>
   );
 }

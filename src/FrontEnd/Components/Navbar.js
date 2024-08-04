@@ -19,7 +19,7 @@ const Navbar = ({ pages, onLinkClick, activePage }) => {
   return (
     <div className="navbarWrapper">
       <div className="navBarHamBurger">
-        <div className="navBarHamBurgerText">M<br />e<br />n<br />u</div>
+        <div className="navBarHamBurgerText">Menu</div>
       </div>
       <div className="navbar">
         <div className="navBarH1">Kristopher Pepper</div>

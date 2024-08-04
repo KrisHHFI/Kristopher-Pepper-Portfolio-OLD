@@ -99,6 +99,9 @@
 .navBarHamBurgerText {
   font-size: 20px;
   font-weight: 900;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  align-content: center;
 }
 
 .navbar {
