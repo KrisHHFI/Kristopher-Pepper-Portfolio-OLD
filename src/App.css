@@ -226,30 +226,35 @@
 }
 
 .splitLayoutTile ul li {
-  margin-bottom: 7px;
-  margin-top: 7px;
+  margin-bottom: 2vh;
+  margin-top: 2vh;
 }
 
-
-@media (max-width: 600px) {
+@media (max-height: 600px) or (max-width: 600px) {
+  .hide-on-mobile {
+    display: none;
+  }
+  
   .pageContent {
     border-top: none;
-    height: calc(93vh - 50px);
+    height: calc(95vh - 50px);
     margin-top: 50px;
     width: 95vw;
+  }
+
+  .pageTitle {
+    font-size: 28px;
+    height: calc(5vh - 50px);
+    align-items: center;
   }
 
   .navbar {
     height: fit-content;
     left: 0px;
-    top: -100%;
+    top: calc(-100% - 50px);
     transition: top 0.3s ease;
     width: 100vw;
     position: fixed;
-  }
-
-  .navBarH1 {
-    margin-bottom: 10px;
   }
 
   .navBarH2 {
@@ -258,7 +263,7 @@
   }
 
   .navBarLinks {
-   font-size: 19px;
+    font-size: 19px;
   }
 
   .navBarSection {
@@ -289,6 +294,25 @@
   .splitLayoutTile ul {
     font-size: 16px;
     padding-left: 20px;
+  }
+}
+
+@media (max-height: 400px) {
+  .navBarH1 {
+    font-size: 22px;
+    margin-bottom: 0px;
+  }
+
+  .navBarH2 {
+    font-size: 20px;
+  }
+
+  .navBarLinks {
+    font-size: 16px;
+  }
+
+  .navBarSection {
+    margin-top: 0px;
   }
 }
 

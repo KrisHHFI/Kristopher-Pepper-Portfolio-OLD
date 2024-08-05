@@ -9,14 +9,12 @@ const SplitLayout = ({ hasIcons, imageSources, noBulletPoints, removeCarouselFor
 
   return (
     <div className="splitLayoutContainer">
-      {!removeCarouselForMobileView && (
-        <div className="splitLayoutTile">
-          <Carousel
-            imageSources={imageSources}
-            hasSplitLayout={true}
-          />
-        </div>
-      )}
+      <div className={`splitLayoutTile ${removeCarouselForMobileView ? 'hide-on-mobile' : ''}`}>
+        <Carousel
+          imageSources={imageSources}
+          hasSplitLayout={true}
+        />
+      </div>
       <div className="splitLayoutTile">
         {text && (
           <ul className={noBulletPoints ? 'noBulletPoints' : ''}>
@@ -38,11 +36,13 @@ SplitLayout.propTypes = {
   text: PropTypes.arrayOf(PropTypes.string),
   noBulletPoints: PropTypes.bool,
   hasIcons: PropTypes.bool,
+  removeCarouselForMobileView: PropTypes.bool,
 };
 
 SplitLayout.defaultProps = {
   noBulletPoints: false,
   hasIcons: false,
+  removeCarouselForMobileView: false,
 };
 
 export default SplitLayout;
