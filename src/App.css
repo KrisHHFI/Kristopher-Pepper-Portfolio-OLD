@@ -176,8 +176,8 @@
   border-top: 1px solid #ccc;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
-  height: calc(93vh - 20px);
-  margin-top: 20px;
+  height: calc(100% - 50px);
+  padding-top: 20px;
   width: 85vw;
 }
 
@@ -185,7 +185,7 @@
   align-content: center;
   font-size: 30px;
   font-weight: bold;
-  height: 7vh;
+  height: 50px;
 }
 
 .socialIcon {
@@ -241,13 +241,13 @@
   .pageContent {
     border-top: none;
     margin-top: 50px;
-    height: calc(90vh - 50px);
+    height: calc(100% - 50px - 50px);
+    /* Full height minus the nav bar and page title */
     width: 95vw;
   }
 
   .pageTitle {
     font-size: 28px;
-    height: calc(5vh - 50px);
     align-items: center;
   }
 
@@ -324,8 +324,8 @@
   .navBarSection {
     margin-top: 0px;
   }
+
+  .splitLayoutTile ul {
+    font-size: 15px;
+  }
 }
-
-/*
-
-*/
