@@ -5,7 +5,7 @@ import SplitLayout from './SplitLayout';
 import PageTitle from './PageTitle';
 import GitHubRepositories from './GitHubRepositories';
 
-const PageContent = ({ pageTitle, hasFullPageCarousel, hasIcons, hasSplitLayout, hasGitHubRepositories, imageSources, noBulletPoints, removeCarouselForMobileView, text }) => {
+const PageContent = ({ pageTitle, hasFullPageCarousel, hasIcons, hasSplitLayout, hasGitHubRepositories, imageSources, noBulletPoints, hideOnMobileView, text }) => {
   return (
     <div className="pageContent">
       {hasFullPageCarousel && (
@@ -17,7 +17,7 @@ const PageContent = ({ pageTitle, hasFullPageCarousel, hasIcons, hasSplitLayout,
         <SplitLayout
           hasIcons={hasIcons}
           imageSources={imageSources}
-          removeCarouselForMobileView={removeCarouselForMobileView}
+          hideOnMobileView={hideOnMobileView}
           text={text}
           noBulletPoints={noBulletPoints}
         />
@@ -38,7 +38,7 @@ PageContent.propTypes = {
   hasSplitLayout: PropTypes.bool,
   hasGitHubRepositories: PropTypes.bool,
   imageSources: PropTypes.object.isRequired,
-  removeCarouselForMobileView: PropTypes.bool,
+  hideOnMobileView: PropTypes.bool,
   text: PropTypes.arrayOf(PropTypes.string),
   noBulletPoints: PropTypes.bool,
 };

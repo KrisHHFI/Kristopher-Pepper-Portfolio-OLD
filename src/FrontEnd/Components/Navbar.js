@@ -4,7 +4,7 @@ import '../../App.css';
 import SocialIcons from './SocialIcons';
 import socialIconsData from '../../Constants/SocialIconsData';
 
-const Navbar = ({ pages, onLinkClick, activePage }) => {
+const Navbar = ({ pages, onLinkClick, activePage, hideOnMobileView }) => {
   const sections = {};
 
   // Group pages by sections
@@ -39,7 +39,9 @@ const Navbar = ({ pages, onLinkClick, activePage }) => {
             </div>
           </div>
         ))}
-        <SocialIcons icons={socialIconsData} />
+        <div className={hideOnMobileView ? 'hide-on-mobile' : ''}>
+          <SocialIcons icons={socialIconsData} />
+        </div>
       </div>
     </div>
   );
@@ -49,6 +51,11 @@ Navbar.propTypes = {
   pages: PropTypes.object.isRequired,
   onLinkClick: PropTypes.func.isRequired,
   activePage: PropTypes.string.isRequired,
+  hideOnMobileView: PropTypes.bool,
+};
+
+Navbar.defaultProps = {
+  hideOnMobileView: false,
 };
 
 export default Navbar;

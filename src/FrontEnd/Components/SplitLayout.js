@@ -5,11 +5,11 @@ import Carousel from './Carousel';
 import SocialIcons from './SocialIcons';
 import socialIconsData from '../../Constants/SocialIconsData';
 
-const SplitLayout = ({ hasIcons, imageSources, noBulletPoints, removeCarouselForMobileView, text }) => {
+const SplitLayout = ({ hasIcons, imageSources, noBulletPoints, hideOnMobileView, text }) => {
 
   return (
     <div className="splitLayoutContainer">
-      <div className={`splitLayoutTile ${removeCarouselForMobileView ? 'hide-on-mobile' : ''}`}>
+      <div className={`splitLayoutTile ${hideOnMobileView ? 'hide-on-mobile' : ''}`}>
         <Carousel
           imageSources={imageSources}
           hasSplitLayout={true}
@@ -24,7 +24,9 @@ const SplitLayout = ({ hasIcons, imageSources, noBulletPoints, removeCarouselFor
           </ul>
         )}
         {hasIcons && (
-          <SocialIcons icons={socialIconsData} />
+          <div className={hideOnMobileView ? 'hide-on-mobile' : ''}>
+            <SocialIcons icons={socialIconsData} />
+          </div>
         )}
       </div>
     </div>
@@ -36,13 +38,13 @@ SplitLayout.propTypes = {
   text: PropTypes.arrayOf(PropTypes.string),
   noBulletPoints: PropTypes.bool,
   hasIcons: PropTypes.bool,
-  removeCarouselForMobileView: PropTypes.bool,
+  hideOnMobileView: PropTypes.bool,
 };
 
 SplitLayout.defaultProps = {
   noBulletPoints: false,
   hasIcons: false,
-  removeCarouselForMobileView: false,
+  hideOnMobileView: false,
 };
 
 export default SplitLayout;

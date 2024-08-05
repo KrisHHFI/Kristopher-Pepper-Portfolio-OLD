@@ -53,7 +53,7 @@ const pages = {
     title: 'Me',
     hasIcons: true,
     hasSplitLayout: true,
-    removeCarouselForMobileView: true,
+    hideOnMobileView: true,
     imageSources: AboutPageImageSources,
     noBulletPoints: true,
     section: 'About',
