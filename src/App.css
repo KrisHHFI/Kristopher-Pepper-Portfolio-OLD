@@ -234,7 +234,7 @@
   .hide-on-mobile {
     display: none;
   }
-  
+
   .pageContent {
     border-top: none;
     height: calc(95vh - 50px);
@@ -252,8 +252,8 @@
     height: fit-content;
     left: 0px;
     top: calc(-100% - 50px);
-    transition: top 0.3s ease;
-    width: 100vw;
+    transition: top 0.4s ease;
+    width: calc(100vw - 15px);
     position: fixed;
   }
 
@@ -298,9 +298,16 @@
 }
 
 @media (max-height: 400px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: space-around;
+    padding-right: 15px;
+  }
+
   .navBarH1 {
     font-size: 22px;
     margin-bottom: 0px;
+    padding-right: 15px;
   }
 
   .navBarH2 {
