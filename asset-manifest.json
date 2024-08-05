@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Kristopher-Pepper-Portfolio/static/css/main.aab1c460.css",
+    "main.css": "/Kristopher-Pepper-Portfolio/static/css/main.008a0766.css",
     "main.js": "/Kristopher-Pepper-Portfolio/static/js/main.b253eb91.js",
     "static/js/453.f8a493fc.chunk.js": "/Kristopher-Pepper-Portfolio/static/js/453.f8a493fc.chunk.js",
     "static/media/Colour2.jpg": "/Kristopher-Pepper-Portfolio/static/media/Colour2.29d8071ff7dcc4ce6310.jpg",
@@ -46,12 +46,12 @@
     "static/media/GitHub.png": "/Kristopher-Pepper-Portfolio/static/media/GitHub.932752fbabe9c64eb2e2.png",
     "static/media/LinkedIn.png": "/Kristopher-Pepper-Portfolio/static/media/LinkedIn.447936120f947cc7585b.png",
     "index.html": "/Kristopher-Pepper-Portfolio/index.html",
-    "main.aab1c460.css.map": "/Kristopher-Pepper-Portfolio/static/css/main.aab1c460.css.map",
+    "main.008a0766.css.map": "/Kristopher-Pepper-Portfolio/static/css/main.008a0766.css.map",
     "main.b253eb91.js.map": "/Kristopher-Pepper-Portfolio/static/js/main.b253eb91.js.map",
     "453.f8a493fc.chunk.js.map": "/Kristopher-Pepper-Portfolio/static/js/453.f8a493fc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.aab1c460.css",
+    "static/css/main.008a0766.css",
     "static/js/main.b253eb91.js"
   ]
 }
