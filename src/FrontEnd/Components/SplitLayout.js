@@ -5,16 +5,18 @@ import Carousel from './Carousel';
 import SocialIcons from './SocialIcons';
 import socialIconsData from '../../Constants/SocialIconsData';
 
-const SplitLayout = ({ hasIcons, imageSources, noBulletPoints, text }) => {
+const SplitLayout = ({ hasIcons, imageSources, noBulletPoints, removeCarouselForMobileView, text }) => {
 
   return (
     <div className="splitLayoutContainer">
-      <div className="splitLayoutTile">
-        <Carousel
-          imageSources={imageSources}
-          hasSplitLayout={true}
-        />
-      </div>
+      {!removeCarouselForMobileView && (
+        <div className="splitLayoutTile">
+          <Carousel
+            imageSources={imageSources}
+            hasSplitLayout={true}
+          />
+        </div>
+      )}
       <div className="splitLayoutTile">
         {text && (
           <ul className={noBulletPoints ? 'noBulletPoints' : ''}>

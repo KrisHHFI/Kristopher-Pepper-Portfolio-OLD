@@ -14,6 +14,7 @@ function App() {
     hasIcons = false,
     noBulletPoints = false,
     imageSources,
+    removeCarouselForMobileView = false,
     text = []
   } = pages[activePage];
 
@@ -27,6 +28,7 @@ function App() {
         hasGitHubRepositories={hasGitHubRepositories}
         imageSources={imageSources}
         noBulletPoints={noBulletPoints}
+        removeCarouselForMobileView={removeCarouselForMobileView}
         text={text}
       />
       <Navbar pages={pages} onLinkClick={setActivePage} activePage={activePage} />
