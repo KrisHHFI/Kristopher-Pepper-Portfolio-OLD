@@ -232,12 +232,20 @@
 
 
 @media (max-width: 600px) {
+  .pageContent {
+    border-top: none;
+    height: calc(93vh - 50px);
+    margin-top: 50px;
+    width: 95vw;
+  }
+
   .navbar {
     height: fit-content;
     left: 0px;
     top: -100%;
     transition: top 0.3s ease;
     width: 100vw;
+    position: fixed;
   }
 
   .navBarH1 {
@@ -250,7 +258,7 @@
   }
 
   .navBarLinks {
-   font-size: 18px;
+   font-size: 19px;
   }
 
   .navBarSection {
@@ -276,6 +284,11 @@
 
   .socialIconsContainer {
     padding-top: 0px;
+  }
+
+  .splitLayoutTile ul {
+    font-size: 16px;
+    padding-left: 20px;
   }
 }
 
