@@ -298,6 +298,13 @@
 }
 
 @media (max-height: 400px) {
+  .pageContent {
+    border-top: none;
+    height: calc(90vh - 50px);
+    margin-top: 50px;
+    width: 95vw;
+  }
+
   .navbar {
     flex-direction: row;
     justify-content: space-around;
