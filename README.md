@@ -1,6 +1,6 @@
 # My Portfolio
 
-Demo video coming soon.
+<img src="ProjectPromoImage.gif"/>
 
 <br>
 
