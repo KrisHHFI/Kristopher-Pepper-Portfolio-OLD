@@ -13,7 +13,7 @@
 
 ### Launch the App
 
-- Check out the web app [here!](https://krishhfi.github.io/Kristopher-Pepper-Portfolio/)
+- Check out the web app [here!](https://krishhfi.github.io/Kristopher-Pepper-Portfolio-OLD/)
 
 1) Install Node.js
 2) Download the project and extract the folder.
