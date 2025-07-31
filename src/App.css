@@ -1,0 +1,331 @@
+.App {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  text-align: center;
+  width: 100vw;
+}
+
+.activeNavLink {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.arrowImage {
+  background-color: grey;
+  cursor: pointer;
+  max-height: 7.5%;
+  opacity: 0;
+  padding: 10px;
+  position: absolute;
+  transition: opacity 0.3s ease;
+}
+
+.carouselContainer {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: auto;
+}
+
+.carouselContainer .arrowImage:hover {
+  opacity: 1 !important;
+}
+
+.carouselContainer:hover .arrowImage {
+  opacity: 0.3;
+}
+
+.carouselImage {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.carouselLeftArrowImage {
+  left: 0;
+}
+
+.carouselRightArrowImage {
+  right: 0;
+}
+
+.carouselSplitLayout {
+  margin: 0;
+  margin-left: auto;
+  /* Needs to be after the margin: 0 */
+  width: fit-content;
+}
+
+.gitHubRepositoriesContainer {
+  border-bottom: 1px solid #ccc;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.gitHubRepositoriesItemContainer {
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  margin-bottom: 15px;
+  padding: 10px;
+}
+
+.gitHubRepositoriesLink {
+  color: #0073e6;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.gitHubRepositoriesLink:hover {
+  text-decoration: underline;
+}
+
+.navBarHamBurger {
+  background-color: lightgray;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  top: 0px;
+  width: 50px;
+}
+
+.navBarHamBurgerText {
+  font-size: 20px;
+  font-weight: 900;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  align-content: center;
+}
+
+.navbar {
+  background-color: #d3d3d3;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Roboto', sans-serif;
+  height: calc(100vh - 30px);
+  justify-content: flex-start;
+  left: -175px;
+  padding: 15px;
+  position: absolute;
+  text-align: left;
+  top: 0;
+  transition: left 0.3s ease;
+  width: 160px;
+}
+
+.navbar:hover,
+.navBarHamBurger:hover+.navbar {
+  left: 0;
+}
+
+.navBarH1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.navBarH2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.navBarLinks {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+
+.navBarLinks div {
+  padding-bottom: 3px;
+  padding-top: 3px;
+}
+
+.navBarLinks div:hover {
+  font-weight: bold;
+}
+
+.navBarSection {
+  padding-bottom: 5px;
+  padding-top: 5px;
+  margin-top: 4vh;
+  transition: background-color 0.3s ease;
+}
+
+.navBarSection:hover {
+  background-color: #c4c2c2;
+}
+
+.noBulletPoints {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+.pageContent {
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  height: calc(100% - 50px);
+  padding-top: 20px;
+  width: 85vw;
+}
+
+.pageTitle {
+  align-content: center;
+  font-size: 30px;
+  font-weight: bold;
+  height: 50px;
+}
+
+.socialIcon {
+  height: 30px;
+  max-width: 100%;
+  object-fit: contain;
+  transition: background-color 0.3s ease;
+}
+
+.socialIcon:hover {
+  background-color: #c4c2c2;
+}
+
+.socialIconsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-top: 1vh;
+}
+
+.splitLayoutContainer {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+}
+
+.splitLayoutTile {
+  align-content: center;
+  flex: 1;
+  flex-direction: column;
+  height: 100%;
+  text-align: left;
+}
+
+.splitLayoutTile ul {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  padding-left: 30px;
+}
+
+.splitLayoutTile ul li {
+  margin-bottom: 2vh;
+  margin-top: 2vh;
+}
+
+@media (max-height: 600px) or (max-width: 600px) {
+  .hide-on-mobile {
+    display: none;
+  }
+
+  .pageContent {
+    border-top: none;
+    margin-top: 50px;
+    height: calc(100% - 50px - 50px);
+    /* Full height minus the nav bar and page title */
+    width: 95vw;
+  }
+
+  .pageTitle {
+    font-size: 28px;
+    align-items: center;
+  }
+
+  .navbar {
+    height: fit-content;
+    left: 0px;
+    top: calc(-100% - 50px);
+    transition: top 0.4s ease;
+    width: calc(100vw - 15px);
+    position: fixed;
+  }
+
+  .navBarH2 {
+    font-size: 22px;
+    margin-bottom: 0px;
+  }
+
+  .navBarLinks {
+    font-size: 19px;
+  }
+
+  .navBarSection {
+    margin-top: 5px;
+  }
+
+  .navBarHamBurger {
+    height: 50px;
+    width: 100vw;
+  }
+
+  .navBarHamBurgerText {
+    writing-mode: horizontal-tb;
+    /* Normal horizontal text */
+    text-orientation: initial;
+    /* Reset text orientation */
+  }
+
+  .navbar:hover,
+  .navBarHamBurger:hover+.navbar {
+    top: 0;
+  }
+
+  .socialIconsContainer {
+    padding-top: 5px;
+  }
+
+  .splitLayoutTile ul {
+    font-size: 16px;
+    padding-left: 20px;
+  }
+}
+
+@media (max-height: 400px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: space-around;
+    padding-right: 15px;
+  }
+
+  .navBarH1 {
+    font-size: 22px;
+    margin-bottom: 0px;
+    padding-right: 15px;
+  }
+
+  .navBarH2 {
+    font-size: 20px;
+  }
+
+  .navBarLinks {
+    font-size: 16px;
+  }
+
+  .navBarSection {
+    margin-top: 0px;
+  }
+
+  .splitLayoutTile ul {
+    font-size: 15px;
+  }
+}
